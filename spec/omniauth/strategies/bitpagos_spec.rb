@@ -18,11 +18,11 @@ describe OmniAuth::Strategies::Bitpagos do
     end
 
     it 'should have correct authorize url' do
-      expect(subject.options.client_options.authorize_url).to eq('/oauth/authorize')
+      expect(subject.options.client_options.authorize_url).to eq('/oauth2/authorize')
     end
 
     it 'should have correct access token url' do
-      expect(subject.options.client_options.token_url).to eq('/oauth/access_token')
+      expect(subject.options.client_options.token_url).to eq('/oauth2/access_token')
     end
 
     it 'should indicate that the provider ignores the state parameted' do

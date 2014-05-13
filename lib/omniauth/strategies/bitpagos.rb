@@ -8,8 +8,8 @@ module OmniAuth
       option :provider_ignores_state, true
       option :client_options, {
         :site               => 'https://www.bitpagos.net',
-        :authorize_url      => '/oauth/authorize',
-        :token_url          => '/oauth/access_token'
+        :authorize_url      => '/oauth2/authorize',
+        :token_url          => '/oauth2/access_token'
       }
 
       uid { raw_info['id'] }
