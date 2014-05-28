@@ -25,7 +25,7 @@ describe OmniAuth::Strategies::Bitpagos do
       expect(subject.options.client_options.token_url).to eq('/oauth2/access_token')
     end
 
-    it 'should indicate that the provider ignores the state parameted' do
+    it 'should indicate that the provider ignores the state parameter' do
       expect(subject.options.provider_ignores_state).to be_true
     end
   end
