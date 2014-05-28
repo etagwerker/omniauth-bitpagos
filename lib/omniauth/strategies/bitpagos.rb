@@ -12,7 +12,7 @@ module OmniAuth
         :token_url          => '/oauth2/access_token'
       }
 
-      uid { raw_info['id'] }
+      uid { raw_info['account_number'] }
 
       info do
         prune!({
@@ -37,7 +37,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.params['user'] || {}
+        @raw_info ||= access_token.params || {}
       end
 
       def request_phase

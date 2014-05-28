@@ -49,32 +49,23 @@ Here's an example *Auth Hash* available in `request.env['omniauth.auth']`:
   :provider => 'bitpagos',
   :uid => '1234567',
   :info => {
-    :username => 'etagwerker',
-    :email => 'foo@bar.com',
-    :phone => '16105553287',
-    :name => 'Ernesto Tagwerker',
-    :first_name => 'Ernesto',
-    :last_name => 'Tagwerker',
-    :image => 'https://bitpagospics.appspot.com/u/v1/s/caa2d1a7-192d-4516-bfef-4ef8a1cd9dbe',
-    :balance => 0.0,
-    :urls => { :profile => 'etagwerker' },
+    :name => 'Ernesto Tagwerker'
   },
   :credentials => {
     :token => 'ABCDEF...',
-    :expires => false
+    :refresh_token => 'GHIJKL...',
+    :expires_at => 1431632560,
+    :expires => true
   },
   :extra => {
     :raw_info => {
-      :id => '1234567',
-      :username => 'etagwerker',
-      :email => 'foo@bar.com',
-      :phone => '16105553287',
-      :name => 'Ernesto Tagwerker',
-      :firstname => 'Ernesto',
-      :lastname => 'Tagwerker',
-      :picture => 'https://bitpagospics.appspot.com/u/v1/s/caa2d1a7-192d-4516-bfef-4ef8a1cd9dbe',
-      :balance => 0.0,
-      :urls => { :profile => 'etagwerker' },
+      :is_active => true,
+      :has_charge => true,
+      :account_number => '34534f0-231d-...',
+      :has_btc => true,
+      :scope => 'read payments',
+      :has_cc => true,
+      :company_name => 'ABC'
     }
   }
 }
