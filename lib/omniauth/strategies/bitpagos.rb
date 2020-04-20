@@ -7,7 +7,7 @@ module OmniAuth
 
       option :provider_ignores_state, true
       option :client_options, {
-        :site               => 'https://www.bitpagos.net',
+        :site               => 'https://www.ripio.com',
         :authorize_url      => '/oauth2/authorize',
         :token_url          => '/oauth2/access_token'
       }

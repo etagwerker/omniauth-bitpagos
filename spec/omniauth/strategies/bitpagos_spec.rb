@@ -14,7 +14,7 @@ describe OmniAuth::Strategies::Bitpagos do
     end
 
     it 'should have correct site' do
-      expect(subject.options.client_options.site).to eq('https://www.bitpagos.net')
+      expect(subject.options.client_options.site).to eq('https://www.ripio.com')
     end
 
     it 'should have correct authorize url' do
@@ -26,7 +26,7 @@ describe OmniAuth::Strategies::Bitpagos do
     end
 
     it 'should indicate that the provider ignores the state parameter' do
-      expect(subject.options.provider_ignores_state).to be_true
+      expect(subject.options.provider_ignores_state).to be_truthy
     end
   end
 
